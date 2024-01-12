@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="./imgs/anhTuan.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><img src="./imgs/Microsoft_To-Do_icon.png" alt="">To Do List</h1>
+            <div class="header_status">
+                <button class="active" value="all">All</button>
+                <button value="completed">Done</button>
+                <button value="incompleted">Undone</button>
+            </div>
+        </div>
+
+        <form action="" id="form">
+            <div class="inputBox">
+                <input type="text" name="" id="input" class="input"
+                placeholder="Add a new task" autocomplete="off"><button>ADD</button>
+            </div>
+
+    
+            <ul class="todos" id="todos">
+    
+            </ul>
+        </form>
+    </div>
+       <h3>Click round icon to mark complete task</h3>
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>

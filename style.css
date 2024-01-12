@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+li{
+    margin: 0;
+}
+
+body{
+    background: rgb(7,210,208);
+    background: linear-gradient(180deg, rgba(7,210,208,1) 35%, rgba(37,101,178,1) 100%);
+    color: gray;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: #FAF9F8;
+    width: 900px;
+    padding: 80px 50px;
+    border-radius: 12px;
+}
+
+h1{
+    color: black;
+    font-size: 50px;
+    text-align: left;
+    /* opacity: 0.4; */
+    margin-bottom: 20px;
+}
+
+h1 img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.header_status{ 
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.header_status button{
+    font-size: 20px;
+    margin: 0 10px;
+    color: black;
+    opacity: 0.4;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.header_status button:hover{
+    transform: scale(0.9);
+}
+
+.header_status .active{
+    opacity: 1;
+    background-color: #0F172A;
+    color: white;
+}
+
+
+
+form{
+    width: 100%;
+    height: 300px;
+    
+}
+
+
+
+.inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    /* border: none;
+    color: gray;
+    font-size: 32px;
+    padding: 15px 20px;
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    background: none;
+    border-bottom: 1px solid gray; */
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    transition: .4s;
+    width: 80%;
+    font-size: 32px;
+}
+
+.inputBox button{
+    width: 20%;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    background-color: #0F172A;
+    border: none;
+    font-size: 16px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.inputBox button:hover{
+    opacity: 0.9;
+    color: white;
+    scale: 0.9;
+}
+
+.input::placeholder{
+    color: gray;
+}
+
+.inputBox .input:focus{
+    outline: none;
+}
+
+.todos{
+    margin-top: 30px;
+    list-style-type: none;
+    overflow: auto; 
+    height: 250px;
+}
+
+.todos::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.todos li{
+    border-top: 1px solid gray;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-left: 4px solid red;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-top: none;
+    transition: 0.3s;
+    color: black;
+    animation: slideFadeDown 250ms forwards;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@keyframes slideFadeDown {
+    
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.todos li:hover{
+    background-color: #F5F5F5;
+}
+
+.todos li i{
+    margin-right: 10px;
+}
+
+.todos li button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+    margin-left: 10px;
+    float: right;
+    transition: 0.3s;
+}
+
+
+.todos li button .fa-pen-to-square{
+    color: green;
+}
+
+.todos li.completed {
+    text-decoration: line-through;
+    border-left: 4px solid green;
+    background-color: #F5F5F5;
+}
+
+.todos li.completed span{
+    color: #b6b6b6;
+    text-decoration: line-through;
+}
+
+h3{
+    color: white;
+    margin-top: 12px;
+}
+
+
+
+
+
+
+
+
